@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Obligatorio</title>
+
+    <!-- incorporar fuente de otro servidor -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- incorporar iconos desde otro servidor -->
+    <script src="https://kit.fontawesome.com/3682b977b2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- incorporar CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/topnavresponsive.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- <ul>
+            <li><a href="index.html">Inicio <i class="fa fa-home"></i></a></li>
+            <li><a href="contacto.html">Contacto <i class='fas fa-address-book'></i></a></li>
+            <li><a href="juegos.html">Nuestros Juegos <i class="fa fa-gamepad"></i></a></li>
+            <li style="float:right"><a class="active" href="quienessomos.html">¿Quienes somos? <i
+                        class='fas fa-book-open'></i></a>
+            </li>
+        </ul> -->
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html">Inicio <i class="fa fa-home"></i></a>
+            <a href="contacto.html">Contacto <i class='fas fa-address-book'></i></a>
+            <a href="juegos.html">Nuestros Juegos <i class="fa fa-gamepad"></i></a>
+            <a href="quienessomos.html">¿Quienes somos? <i class='fas fa-book-open'></i></a>
+            <a class="icon" onclick="myFunction1()">
+                <i class="fa fa-bars"></i>
+        </div>
+    </header>
+
+    <br><br><br><br>
+
+    <main>
+        <style>
+            /* Float four columns side by side */
+            .column1 {
+                float: left;
+                width: 25%;
+                padding: 0 10px;
+            }
+
+            /* Remove extra left and right margins, due to padding */
+            .row1 {
+                margin: 0 -5px;
+            }
+
+            /* Clear floats after the columns */
+            .row1:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+                .column1 {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+
+            /* Style the counter cards */
+            .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                text-align: center;
+                background-color: #f1f1f1;
+            }
+
+            .button1 {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+        </style>
+
+
+        <div class="row1">
+            <div class="column1">
+                <div class="card1">
+                    <h2>2048</h2>
+                    <img src="multimedia/juego2-photoshop.png" alt="Avatar" style="width:100%">
+                    <p>
+                    <form action="https://codepen.io/OnlyOneNewton/pen/wgpYaP" method="get" target="_blank">
+                        <button class="button1" type="submit">Jugar</button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="card1">
+                    <h2>3 en raya</h2>
+                    <img src="multimedia/juego1-photoshop.png" alt="Avatar" style="width:100%">
+                    <p>
+                    <form action="https://codepen.io/ziga-miklic/pen/QWrGyW" method="get" target="_blank">
+                        <button class="button1" type="submit">Jugar</button>
+                    </form>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">        
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">CODO A CODO</a> </p>
+        </div>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+    <script src="js/topnavresponsive.js"></script>
+</body>
+
+</html>
