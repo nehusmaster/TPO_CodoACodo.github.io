@@ -39,72 +39,99 @@
             <a href="juegos.html">Nuestros Juegos <i class="fa fa-gamepad"></i></a>
             <a href="quienessomos.html">¿Quienes somos? <i class='fas fa-book-open'></i></a>
             <a class="icon" onclick="myFunction1()">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i></a>
         </div>
     </header>
 
     <br><br><br><br>
 
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        iframe {
+            align-items: center;
+        }
+
+        .iframecenter {
+            text-align: center;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            div>iframe {
+                width: 350px;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%
+            }
+        }
+
+        .button1 {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%
+        }
+
+        .fade {
+            opacity: 0.5;
+        }
+
+        .fade:hover {
+            opacity: 1;
+        }
+    </style>
     <main>
-        <div class="container">
-            <ul class="slider">
-                <li id="slide1">
-                    <img src="multimedia/juego1-photoshop.png" style="width:100%;">
-                </li>
-                <li id="slide2">
-                    <img src="multimedia/juego2-photoshop.png" style="width:100%;">
-                </li>
-                <li id="slide3">
-                    <h1>Nuestra empresa</h1>
-                    <p>Prueba nuestros juegos</p>
-                    <button class="button button1">Jugar</button>
-                </li>
-            </ul>
-            <ul class="menu">
-                <li>
-                    <a href="#slide1">1</a>
-                </li>
-                <li>
-                    <a href="#slide2">2</a>
-                </li>
-                <li>
-                    <a href="#slide3">3</a>
-                </li>
-            </ul>
+        <h1>Bienvenidos a Nuestra empresa</h1>
+        <div class="iframecenter">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NgmpQm58qzg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <hr>
+            <a href="juegos.html">
+                <button class="button1" type="submit">Nuestros juegos</button>
+            </a>
         </div>
+        <br><br>
+        <div class="fade">
+            <img src="/multimedia/videogamestudio.PNG">
+        </div>
+
     </main>
 
-    <!-- <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-        <a href="#"><i class="fa fa-facebook-official"></i></a>
-        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-flickr"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-    </footer> -->
-
     <footer>
-        <div class="footer-content">        
+        <div class="footer-content">
             <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="http://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
         <div class="footer-bottom">
             <p>copyright &copy; <a href="#">CODO A CODO</a> </p>
-            <!-- <div class="footer-menu">
-                <ul class="f-menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div> -->
         </div>
     </footer>
 
-    <script src="js/funciones.js"></script>
     <script src="js/topnavresponsive.js"></script>
 </body>
 
